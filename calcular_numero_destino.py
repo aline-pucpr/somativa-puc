@@ -31,7 +31,7 @@ def obter_significado_numero_destino(numero):
 def obter_profissoes_favoraveis(numero):
     profissoes = {
         1: "Empreendedor, Gerente, Diretor Executivo, Líder de Projeto, Palestrante Motivacional.",
-        2: "Diplomata, Conselheiro, Psicólogo, Enfermeiro, Professor, Mediador de Conflitos.",
+        2: "Diplomata, Conselheiro, Psicólogo, Enfermeiro, Professor, Coach.",
         3: "Escritor, Jornalista, Ator, Publicitário, Designer Gráfico, Relações Públicas.",
         4: "Engenheiro, Contador, Analista de Dados, Administrador, Arquiteto, Programador.",
         5: "Viajante, Jornalista de Viagem, Vendedor, Agente de Turismo, Publicitário, Freelancer.",
