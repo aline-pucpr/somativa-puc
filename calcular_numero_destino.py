@@ -14,7 +14,7 @@ def calcular_numero_destino(data):
     return numero_destino
 
 def main():
-    print("Bem-vindo ao programa de Numerologia!")
+    print("Bem-vindo ao Arcturus!")
     data_nascimento = input("Digite sua data de nascimento (formato DD/MM/AAAA): ")
 
     # Calcula o Número de Destino
