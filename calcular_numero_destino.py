@@ -28,18 +28,37 @@ def obter_significado_numero_destino(numero):
 
     return significados.get(numero, "Significado não encontrado.")
 
+def obter_profissoes_favoraveis(numero):
+    profissoes = {
+        1: "Empreendedor, Gerente, Diretor Executivo, Líder de Projeto, Palestrante Motivacional.",
+        2: "Diplomata, Conselheiro, Psicólogo, Enfermeiro, Professor, Mediador de Conflitos.",
+        3: "Escritor, Jornalista, Ator, Publicitário, Designer Gráfico, Relações Públicas.",
+        4: "Engenheiro, Contador, Analista de Dados, Administrador, Arquiteto, Programador.",
+        5: "Viajante, Jornalista de Viagem, Vendedor, Agente de Turismo, Publicitário, Freelancer.",
+        6: "Professor, Assistente Social, Médico, Nutricionista, Enfermeiro, Conselheiro.",
+        7: "Pesquisador, Cientista, Filósofo, Professor Universitário, Escritor, Analista.",
+        8: "Empresário, Executivo Financeiro, Investidor, Consultor de Negócios, Advogado.",
+        9: "Trabalhador Social, Psicólogo, Artista, Professor, Conselheiro, Missionário.",
+    }
+
+    return profissoes.get(numero, "Profissões não encontradas.")
+
 def main():
     print("Bem-vindo ao Arcturus!")
     data_nascimento = input("Digite sua data de nascimento (formato DD/MM/AAAA): ")
 
     # Calcula o Número de Destino
     numero_destino = calcular_numero_destino(data_nascimento)
-    
+
     # Obtém o significado do Número de Destino
     significado = obter_significado_numero_destino(numero_destino)
 
-    print(f"Seu Número de Destino é: {numero_destino}")
+    # Obtém as profissões favoráveis para o Número de Destino
+    profissoes = obter_profissoes_favoraveis(numero_destino)
+
+    print(f"\nSeu Número de Destino é: {numero_destino}")
     print(f"Significado: {significado}")
+    print(f"Profissões Favoráveis: {profissoes}")
 
 if __name__ == "__main__":
     main()
